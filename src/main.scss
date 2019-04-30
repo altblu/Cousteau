@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+// Import a Google Font
+// @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+$brand-color: (
+  royal: #006098,
+  sky: #0090D0,
+  slate: #58585B,
+  silver: #979898,
+  snow: #efefef
+);
+// map-get($brand-color, royal);
+
+$primary-font: "Open Sans", sans-serif;
+
+// Update Bulma's global variables
+$family-sans-serif: $primary-font;
+$grey-dark: map-get($brand-color, slate);
+$grey-light: map-get($brand-color, snow);
+$primary: map-get($brand-color, royal);
+$link:  map-get($brand-color, sky);
+// $widescreen-enabled: false;
+// $fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: map-get($brand-color, snow);
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+$control-radius: 0;
+$control-border-width: 1px;
+
+$navbar-item-img-max-height: 4rem;
+
+$button-padding-vertical: 0.8em;
+
+$tabs-link-padding: 0.8em 2em;
+
+// $button-padding-vertical: 20px;
+// $button-padding-horizontal: 20px;
+
+// Import only what you need from Bulma
+// @import "../node_modules/bulma/sass/utilities/_all.sass";
+// @import "../node_modules/bulma/sass/base/_all.sass";
+// @import "../node_modules/bulma/sass/elements/button.sass";
+// @import "../node_modules/bulma/sass/elements/container.sass";
+// @import "../node_modules/bulma/sass/elements/form.sass";
+// @import "../node_modules/bulma/sass/elements/title.sass";
+// @import "../node_modules/bulma/sass/components/navbar.sass";
+// @import "../node_modules/bulma/sass/layout/hero.sass";
+// @import "../node_modules/bulma/sass/layout/section.sass";
+
+// if you want everything uncomment below
+@import "../node_modules/bulma/bulma.sass";
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.is-lava {
+  background-image: linear-gradient(-45deg, #23A6D5, #23D5AB, #23A6D5, #23D5AB) !important;
+  background-size: 400% 400% !important;
+  color: #fff !important;
+  animation: Gradient 15s ease infinite;
+  &:hover {
+    border-color: transparent !important;
+  }
+}
+
+.is-ghost {
+  background: transparent !important;
+}
+
+.sli-md {
+  font-size:24px;
+}
+
+.sli-lg {
+  font-size:32px;
+}
+
+.button {
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  min-width: 140px;
+  font-size: 90%;
+  height: auto !important;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  img {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+  }
+}
+
+.content {
+  h1,h2,h3,h4,h5 {
+    text-transform:uppercase;
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+}
+
+.tabs ul {
+  justify-content: space-between;
+}
+
+.icon-nearby {
+  transform: translateX(-20px);
+}
+
+.is-flex-vcentered {
+  display:flex;
+  align-items:center;
+}
+
+.icon.is-xlarge {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.menu-label {
+  font-size:100%;
+  // border-bottom: 1px solid #ccc;
+  // padding-bottom:6px;
+  &:not(:first-of-type) {
+    padding-top:20px;
+  }
+}
+
+.menu-list {
+  > li > a {
+    padding-left: 40px;
+    position: relative;
+    &:before {
+      transition: 200ms all;
+      content:'';
+      position:absolute;
+      height:16px;
+      width:16px;
+      background: map-get($brand-color, royal);
+      left:10px;
+      top:10px;
+    }
+    &:after {
+      transition: 200ms all;
+      content: '\002B';
+      position:absolute;
+      color:#fff;
+      left:13px;
+      top:7px;
+      font-size:18px;
+    }
+    &.is-active {
+      &:after {
+        transform: rotate(45deg);
+      }
+      &:before {
+        background: map-get($brand-color, sky);
+      }
+    }
+    // &:hover {
+    //   &:after {
+    //     transition: 200ms all;
+    //     transform: rotate(45deg);
+    //   }
+    //   &:before {
+    //     transition: 200ms all;
+    //     background: map-get($brand-color, sky);
+    //   }
+    // }
+    &.is-expanded {
+      &:after {
+        transition: 200ms all;
+        transform: rotate(45deg);
+      }
+      &:before {
+        transition: 200ms all;
+        background: map-get($brand-color, sky);
+      }
+    }
+  }
+}

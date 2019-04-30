@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TS3D Stylekit</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+  <link rel="stylesheet" href="ts3d-stylekit.css">
+  <style>
+    .icons {
+      font-size: 48px;
+    }
+
+    .flex-icons {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .icon-box {
+      flex-basis: 30%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="has-background-white">
+    <nav class="navbar container" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="img/ts3d-devzone.png" alt="Logo">
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu">
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-lava">
+                Sign In
+              </a>
+              <a class="button is-ghost">
+                Register
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <section class="hero is-primary is-medium">
+
+    <img src="img/developers.png" />
+
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          Resources for Developers
+        </h1>
+        <h2 class="subtitle">
+          Explore all Tech Soft 3D products, under one roof.
+        </h2>
+      </div>
+    </div>
+
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-centered">
+        <div class="container">
+          <ul class="is-uppercase" style="letter-spacing: 2px; font-size: 90%;">
+            <li class="has-background-grey-light has-text-black-ter"><a>HOOPS Products</a></li>
+            <li><a>Partner Products</a></li>
+            <li><a>OEM/CAD Platforms</a></li>
+            <li><a>Documentation</a></li>
+            <li><a>Developer Support</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="columns section">
+      <div class="column is-one-quarter has-background-white-ter section">
+        <aside class="menu">
+          <p class="menu-label">
+            HOOPS Communicator
+          </p>
+          <ul class="menu-list">
+            <li><a>Downloads</a></li>
+            <li><a>Latest Documentation</a></li>
+            <li><a>Online Training</a></li>
+            <li>
+            <a class="is-active">File Formats</a>
+              <ul>
+                <li><a>PDF</a></li>
+                <li><a>CAD</a></li>
+                <li><a>STL</a></li>
+              </ul>
+            </li>
+            <li><a>Release Notes</a></li>
+            <li><a>Older Versions</a></li>
+          </ul>
+          <p class="menu-label">
+            HOOPS Exchange
+          </p>
+          <ul class="menu-list">
+            <li><a>Downloads</a></li>
+            <li><a>Latest Documentation</a></li>
+            <li><a>Online Training</a></li>
+            <li><a>File Formats</a></li>
+            <li><a>Release Notes</a></li>
+            <li><a>Older Versions</a></li>
+          </ul>
+          <p class="menu-label">
+            HOOPS Publish
+          </p>
+          <ul class="menu-list">
+            <li><a>Downloads</a></li>
+            <li><a>Latest Documentation</a></li>
+            <li><a>Online Training</a></li>
+            <li><a>File Formats</a></li>
+            <li><a>Release Notes</a></li>
+            <li><a>Older Versions</a></li>
+          </ul>
+          <p class="menu-label">
+            HOOPS Visualize
+          </p>
+          <ul class="menu-list">
+            <li><a>Downloads</a></li>
+            <li><a>Latest Documentation</a></li>
+            <li><a>Online Training</a></li>
+            <li><a>File Formats</a></li>
+            <li><a>Release Notes</a></li>
+            <li><a>Older Versions</a></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="column is-three-quarters section">
+        <div class="field">
+          <div class="control">
+            <input class="input" type="text" placeholder="Input">
+          </div>
+        </div>
+        <div class="field">
+          <p class="control">
+            <span class="select">
+              <select>
+                <option>Select dropdown</option>
+              </select>
+            </span>
+          </p>
+        </div>
+        <div class="buttons">
+          <a class="button is-primary">Primary</a>
+          <a class="button is-link">Link</a>
+          <a class="button is-lava">Lava</a>
+          <a class="button is-ghost">Ghost</a>
+          <a class="button is-danger">
+              <span class="icon">
+                  <i class="icon-eyeglass"></i>
+                </span>
+                <span>Icon</span>
+          </a>
+          <a class="button is-ghost">
+              <span class="icon">
+                  <i class="icon-ghost"></i>
+                </span>
+                <span>Ghost</span>
+          </a>
+        </div>
+        <pre>
+          <code>
+&#x3C;div class=&#x22;buttons&#x22;&#x3E;
+  &#x3C;a class=&#x22;button is-primary&#x22;&#x3E;Primary&#x3C;/a&#x3E;
+  &#x3C;a class=&#x22;button is-link&#x22;&#x3E;Link&#x3C;/a&#x3E;
+&#x3C;/div&#x3E;
+          </code>
+        </pre>
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Username</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+            <span class="icon is-small is-left">
+              <i class="icon-people"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+          <p class="help is-success">This username is available</p>
+        </div>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+            <span class="icon is-small is-left">
+              <i class="icon-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-exclamation-triangle"></i>
+            </span>
+          </div>
+          <p class="help is-danger">This email is invalid</p>
+        </div>
+        <div class="field">
+          <label class="label">Password</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" type="password" placeholder="Enter your password">
+            <span class="icon is-small is-left">
+              <i class="icon-key"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="icon-eye"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Subject</label>
+          <div class="control">
+            <div class="select">
+              <select>
+                <option>Select dropdown</option>
+                <option>With options</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox">
+              I agree to the <a href="#">terms and conditions</a>
+            </label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="question">
+              Yes
+            </label>
+            <label class="radio">
+              <input type="radio" name="question">
+              No
+            </label>
+          </div>
+        </div>
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-text">Cancel</button>
+          </div>
+        </div>
+
+        <div class="flex-icons">
+          <div class="icon-box">
+            <i class="icon-user icons"></i><span class="name">user</span> <code class="code-preview"
+              style="display: block;">.icon-user</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-people icons"></i><span class="name">people</span> <code class="code-preview"
+              style="display: block;">.icon-people</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-user-female icons"></i><span class="name" style="display: inline;">user-female</span> <code
+              class="code-preview" style="display: block;">.icon-user-female</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-user-follow icons"></i><span class="name">user-follow</span> <code class="code-preview"
+              style="display: block;">.icon-user-follow</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-user-following icons"></i><span class="name">user-following</span> <code class="code-preview"
+              style="display: block;">.icon-user-following</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-user-unfollow icons"></i><span class="name" style="display: inline;">user-unfollow</span>
+            <code class="code-preview" style="display: block;">.icon-user-unfollow</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-login icons"></i><span class="name">login</span> <code class="code-preview"
+              style="display: block;">.icon-login</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-logout icons"></i><span class="name">logout</span> <code class="code-preview"
+              style="display: block;">.icon-logout</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-emotsmile icons"></i><span class="name">emotsmile</span> <code class="code-preview"
+              style="display: block;">.icon-emotsmile</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-phone icons"></i><span class="name">phone</span> <code class="code-preview"
+              style="display: block;">.icon-phone</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-call-end icons"></i><span class="name">call-end</span> <code class="code-preview"
+              style="display: block;">.icon-call-end</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-call-in icons"></i><span class="name">call-in</span> <code class="code-preview"
+              style="display: block;">.icon-call-in</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-call-out icons"></i><span class="name">call-out</span> <code class="code-preview"
+              style="display: block;">.icon-call-out</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-map icons"></i><span class="name">map</span> <code class="code-preview"
+              style="display: block;">.icon-map</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-location-pin icons"></i><span class="name">location-pin</span> <code class="code-preview"
+              style="display: block;">.icon-location-pin</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-direction icons"></i><span class="name">direction</span> <code class="code-preview"
+              style="display: block;">.icon-direction</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-directions icons"></i><span class="name">directions</span> <code class="code-preview"
+              style="display: block;">.icon-directions</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-compass icons"></i><span class="name">compass</span> <code class="code-preview"
+              style="display: block;">.icon-compass</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-layers icons"></i><span class="name">layers</span> <code class="code-preview"
+              style="display: block;">.icon-layers</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-menu icons"></i><span class="name">menu</span> <code class="code-preview"
+              style="display: block;">.icon-menu</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-list icons"></i><span class="name">list</span> <code class="code-preview"
+              style="display: block;">.icon-list</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-options-vertical icons"></i><span class="name">options-vertical</span> <code
+              class="code-preview" style="display: block;">.icon-options-vertical</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-options icons"></i><span class="name">options</span> <code class="code-preview"
+              style="display: block;">.icon-options</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-arrow-down icons"></i><span class="name">arrow-down</span> <code class="code-preview"
+              style="display: block;">.icon-arrow-down</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-arrow-left icons"></i><span class="name">arrow-left</span> <code class="code-preview"
+              style="display: block;">.icon-arrow-left</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-arrow-right icons"></i><span class="name">arrow-right</span> <code class="code-preview"
+              style="display: block;">.icon-arrow-right</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-arrow-up icons"></i><span class="name">arrow-up</span> <code class="code-preview"
+              style="display: block;">.icon-arrow-up</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-arrow-up-circle icons"></i><span class="name">arrow-up-circle</span> <code
+              class="code-preview" style="display: block;">.icon-arrow-up-circle</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-arrow-left-circle icons"></i><span class="name">arrow-left-circle</span> <code
+              class="code-preview" style="display: block;">.icon-arrow-left-circle</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-arrow-right-circle icons"></i><span class="name">arrow-right-circle</span> <code
+              class="code-preview" style="display: block;">.icon-arrow-right-circle</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-arrow-down-circle icons"></i><span class="name">arrow-down-circle</span> <code
+              class="code-preview" style="display: block;">.icon-arrow-down-circle</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-check icons"></i><span class="name">check</span> <code class="code-preview"
+              style="display: block;">.icon-check</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-clock icons"></i><span class="name">clock</span> <code class="code-preview"
+              style="display: block;">.icon-clock</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-plus icons"></i><span class="name">plus</span> <code class="code-preview"
+              style="display: block;">.icon-plus</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-minus icons"></i><span class="name">minus</span> <code class="code-preview"
+              style="display: block;">.icon-minus</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-close icons"></i><span class="name">close</span> <code class="code-preview"
+              style="display: block;">.icon-close</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-event icons"></i><span class="name">event</span> <code class="code-preview"
+              style="display: block;">.icon-event</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-exclamation icons"></i><span class="name">exclamation</span> <code class="code-preview"
+              style="display: block;">.icon-exclamation</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-organization icons"></i><span class="name">organization</span> <code class="code-preview"
+              style="display: block;">.icon-organization</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-trophy icons"></i><span class="name">trophy</span> <code class="code-preview"
+              style="display: block;">.icon-trophy</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-screen-smartphone icons"></i><span class="name">screen-smartphone</span> <code
+              class="code-preview" style="display: block;">.icon-screen-smartphone</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-screen-desktop icons"></i><span class="name">screen-desktop</span> <code class="code-preview"
+              style="display: block;">.icon-screen-desktop</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-plane icons"></i><span class="name">plane</span> <code class="code-preview"
+              style="display: block;">.icon-plane</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-notebook icons"></i><span class="name">notebook</span> <code class="code-preview"
+              style="display: block;">.icon-notebook</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-mustache icons"></i><span class="name">mustache</span> <code class="code-preview"
+              style="display: block;">.icon-mustache</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-mouse icons"></i><span class="name">mouse</span> <code class="code-preview"
+              style="display: block;">.icon-mouse</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-magnet icons"></i><span class="name">magnet</span> <code class="code-preview"
+              style="display: block;">.icon-magnet</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-energy icons"></i><span class="name">energy</span> <code class="code-preview"
+              style="display: block;">.icon-energy</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-disc icons"></i><span class="name">disc</span> <code class="code-preview"
+              style="display: block;">.icon-disc</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-cursor icons"></i><span class="name">cursor</span> <code class="code-preview"
+              style="display: block;">.icon-cursor</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-cursor-move icons"></i><span class="name">cursor-move</span> <code class="code-preview"
+              style="display: block;">.icon-cursor-move</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-crop icons"></i><span class="name">crop</span> <code class="code-preview"
+              style="display: block;">.icon-crop</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-chemistry icons"></i><span class="name">chemistry</span> <code class="code-preview"
+              style="display: block;">.icon-chemistry</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-speedometer icons"></i><span class="name">speedometer</span> <code class="code-preview"
+              style="display: block;">.icon-speedometer</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-shield icons"></i><span class="name">shield</span> <code class="code-preview"
+              style="display: block;">.icon-shield</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-screen-tablet icons"></i><span class="name">screen-tablet</span> <code class="code-preview"
+              style="display: block;">.icon-screen-tablet</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-magic-wand icons"></i><span class="name">magic-wand</span> <code class="code-preview"
+              style="display: block;">.icon-magic-wand</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-hourglass icons"></i><span class="name">hourglass</span> <code class="code-preview"
+              style="display: block;">.icon-hourglass</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-graduation icons"></i><span class="name">graduation</span> <code class="code-preview"
+              style="display: block;">.icon-graduation</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-ghost icons"></i><span class="name">ghost</span> <code class="code-preview"
+              style="display: block;">.icon-ghost</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-game-controller icons"></i><span class="name">game-controller</span> <code
+              class="code-preview" style="display: block;">.icon-game-controller</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-fire icons"></i><span class="name">fire</span> <code class="code-preview"
+              style="display: block;">.icon-fire</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-eyeglass icons"></i><span class="name">eyeglass</span> <code class="code-preview"
+              style="display: block;">.icon-eyeglass</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-envelope-open icons"></i><span class="name">envelope-open</span> <code class="code-preview"
+              style="display: block;">.icon-envelope-open</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-envelope-letter icons"></i><span class="name">envelope-letter</span> <code
+              class="code-preview" style="display: block;">.icon-envelope-letter</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-bell icons"></i><span class="name">bell</span> <code class="code-preview"
+              style="display: block;">.icon-bell</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-badge icons"></i><span class="name">badge</span> <code class="code-preview"
+              style="display: block;">.icon-badge</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-anchor icons"></i><span class="name">anchor</span> <code class="code-preview"
+              style="display: block;">.icon-anchor</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-wallet icons"></i><span class="name">wallet</span> <code class="code-preview"
+              style="display: block;">.icon-wallet</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-vector icons"></i><span class="name">vector</span> <code class="code-preview"
+              style="display: block;">.icon-vector</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-speech icons"></i><span class="name">speech</span> <code class="code-preview"
+              style="display: block;">.icon-speech</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-puzzle icons"></i><span class="name">puzzle</span> <code class="code-preview"
+              style="display: block;">.icon-puzzle</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-printer icons"></i><span class="name">printer</span> <code class="code-preview"
+              style="display: block;">.icon-printer</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-present icons"></i><span class="name">present</span> <code class="code-preview"
+              style="display: block;">.icon-present</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-playlist icons"></i><span class="name">playlist</span> <code class="code-preview"
+              style="display: block;">.icon-playlist</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-pin icons"></i><span class="name">pin</span> <code class="code-preview"
+              style="display: block;">.icon-pin</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-picture icons"></i><span class="name">picture</span> <code class="code-preview"
+              style="display: block;">.icon-picture</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-handbag icons"></i><span class="name">handbag</span> <code class="code-preview"
+              style="display: block;">.icon-handbag</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-globe-alt icons"></i><span class="name">globe-alt</span> <code class="code-preview"
+              style="display: block;">.icon-globe-alt</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-globe icons"></i><span class="name">globe</span> <code class="code-preview"
+              style="display: block;">.icon-globe</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-folder-alt icons"></i><span class="name">folder-alt</span> <code class="code-preview"
+              style="display: block;">.icon-folder-alt</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-folder icons"></i><span class="name">folder</span> <code class="code-preview"
+              style="display: block;">.icon-folder</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-film icons"></i><span class="name">film</span> <code class="code-preview"
+              style="display: block;">.icon-film</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-feed icons"></i><span class="name">feed</span> <code class="code-preview"
+              style="display: block;">.icon-feed</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-drop icons"></i><span class="name">drop</span> <code class="code-preview"
+              style="display: block;">.icon-drop</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-drawer icons"></i><span class="name">drawer</span> <code class="code-preview"
+              style="display: block;">.icon-drawer</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-docs icons"></i><span class="name">docs</span> <code class="code-preview"
+              style="display: block;">.icon-docs</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-doc icons"></i><span class="name">doc</span> <code class="code-preview"
+              style="display: block;">.icon-doc</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-diamond icons"></i><span class="name">diamond</span> <code class="code-preview"
+              style="display: block;">.icon-diamond</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-cup icons"></i><span class="name">cup</span> <code class="code-preview"
+              style="display: block;">.icon-cup</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-calculator icons"></i><span class="name">calculator</span> <code class="code-preview"
+              style="display: block;">.icon-calculator</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-bubbles icons"></i><span class="name">bubbles</span> <code class="code-preview"
+              style="display: block;">.icon-bubbles</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-briefcase icons"></i><span class="name">briefcase</span> <code class="code-preview"
+              style="display: block;">.icon-briefcase</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-book-open icons"></i><span class="name">book-open</span> <code class="code-preview"
+              style="display: block;">.icon-book-open</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-basket-loaded icons"></i><span class="name">basket-loaded</span> <code class="code-preview"
+              style="display: block;">.icon-basket-loaded</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-basket icons"></i><span class="name">basket</span> <code class="code-preview"
+              style="display: block;">.icon-basket</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-bag icons"></i><span class="name">bag</span> <code class="code-preview"
+              style="display: block;">.icon-bag</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-action-undo icons"></i><span class="name">action-undo</span> <code class="code-preview"
+              style="display: block;">.icon-action-undo</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-action-redo icons"></i><span class="name">action-redo</span> <code class="code-preview"
+              style="display: block;">.icon-action-redo</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-wrench icons"></i><span class="name">wrench</span> <code class="code-preview"
+              style="display: block;">.icon-wrench</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-umbrella icons"></i><span class="name">umbrella</span> <code class="code-preview"
+              style="display: block;">.icon-umbrella</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-trash icons"></i><span class="name">trash</span> <code class="code-preview"
+              style="display: block;">.icon-trash</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-tag icons"></i><span class="name">tag</span> <code class="code-preview"
+              style="display: block;">.icon-tag</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-support icons"></i><span class="name">support</span> <code class="code-preview"
+              style="display: block;">.icon-support</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-frame icons"></i><span class="name">frame</span> <code class="code-preview"
+              style="display: block;">.icon-frame</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-size-fullscreen icons"></i><span class="name">size-fullscreen</span> <code
+              class="code-preview" style="display: block;">.icon-size-fullscreen</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-size-actual icons"></i><span class="name">size-actual</span> <code class="code-preview"
+              style="display: block;">.icon-size-actual</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-shuffle icons"></i><span class="name">shuffle</span> <code class="code-preview"
+              style="display: block;">.icon-shuffle</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-share-alt icons"></i><span class="name">share-alt</span> <code class="code-preview"
+              style="display: block;">.icon-share-alt</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-share icons"></i><span class="name">share</span> <code class="code-preview"
+              style="display: block;">.icon-share</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-rocket icons"></i><span class="name">rocket</span> <code class="code-preview"
+              style="display: block;">.icon-rocket</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-question icons"></i><span class="name">question</span> <code class="code-preview"
+              style="display: block;">.icon-question</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-pie-chart icons"></i><span class="name">pie-chart</span> <code class="code-preview"
+              style="display: block;">.icon-pie-chart</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-pencil icons"></i><span class="name">pencil</span> <code class="code-preview"
+              style="display: block;">.icon-pencil</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-note icons"></i><span class="name">note</span> <code class="code-preview"
+              style="display: block;">.icon-note</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-loop icons"></i><span class="name">loop</span> <code class="code-preview"
+              style="display: block;">.icon-loop</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-home icons"></i><span class="name">home</span> <code class="code-preview"
+              style="display: block;">.icon-home</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-grid icons"></i><span class="name">grid</span> <code class="code-preview"
+              style="display: block;">.icon-grid</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-graph icons"></i><span class="name">graph</span> <code class="code-preview"
+              style="display: block;">.icon-graph</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-microphone icons"></i><span class="name">microphone</span> <code class="code-preview"
+              style="display: block;">.icon-microphone</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-music-tone-alt icons"></i><span class="name">music-tone-alt</span> <code class="code-preview"
+              style="display: block;">.icon-music-tone-alt</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-music-tone icons"></i><span class="name">music-tone</span> <code class="code-preview"
+              style="display: block;">.icon-music-tone</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-earphones-alt icons"></i><span class="name">earphones-alt</span> <code class="code-preview"
+              style="display: block;">.icon-earphones-alt</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-earphones icons"></i><span class="name">earphones</span> <code class="code-preview"
+              style="display: block;">.icon-earphones</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-equalizer icons"></i><span class="name">equalizer</span> <code class="code-preview"
+              style="display: block;">.icon-equalizer</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-like icons"></i><span class="name">like</span> <code class="code-preview"
+              style="display: block;">.icon-like</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-dislike icons"></i><span class="name">dislike</span> <code class="code-preview"
+              style="display: block;">.icon-dislike</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-control-start icons"></i><span class="name">control-start</span> <code class="code-preview"
+              style="display: block;">.icon-control-start</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-control-rewind icons"></i><span class="name">control-rewind</span> <code class="code-preview"
+              style="display: block;">.icon-control-rewind</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-control-play icons"></i><span class="name">control-play</span> <code class="code-preview"
+              style="display: block;">.icon-control-play</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-control-pause icons"></i><span class="name">control-pause</span> <code class="code-preview"
+              style="display: block;">.icon-control-pause</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-control-forward icons"></i><span class="name">control-forward</span> <code
+              class="code-preview" style="display: block;">.icon-control-forward</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-control-end icons"></i><span class="name">control-end</span> <code class="code-preview"
+              style="display: block;">.icon-control-end</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-volume-1 icons"></i><span class="name">volume-1</span> <code class="code-preview"
+              style="display: block;">.icon-volume-1</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-volume-2 icons"></i><span class="name">volume-2</span> <code class="code-preview"
+              style="display: block;">.icon-volume-2</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-volume-off icons"></i><span class="name">volume-off</span> <code class="code-preview"
+              style="display: block;">.icon-volume-off</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-calendar icons"></i><span class="name">calendar</span> <code class="code-preview"
+              style="display: block;">.icon-calendar</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-bulb icons"></i><span class="name">bulb</span> <code class="code-preview"
+              style="display: block;">.icon-bulb</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-chart icons"></i><span class="name">chart</span> <code class="code-preview"
+              style="display: block;">.icon-chart</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-ban icons"></i><span class="name">ban</span> <code class="code-preview"
+              style="display: block;">.icon-ban</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-bubble icons"></i><span class="name">bubble</span> <code class="code-preview"
+              style="display: block;">.icon-bubble</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-camrecorder icons"></i><span class="name">camrecorder</span> <code class="code-preview"
+              style="display: block;">.icon-camrecorder</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-camera icons"></i><span class="name">camera</span> <code class="code-preview"
+              style="display: block;">.icon-camera</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-cloud-download icons"></i><span class="name">cloud-download</span> <code class="code-preview"
+              style="display: block;">.icon-cloud-download</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-cloud-upload icons"></i><span class="name">cloud-upload</span> <code class="code-preview"
+              style="display: block;">.icon-cloud-upload</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-envelope icons"></i><span class="name">envelope</span> <code class="code-preview"
+              style="display: block;">.icon-envelope</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-eye icons"></i><span class="name">eye</span> <code class="code-preview"
+              style="display: block;">.icon-eye</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-flag icons"></i><span class="name">flag</span> <code class="code-preview"
+              style="display: block;">.icon-flag</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-heart icons"></i><span class="name">heart</span> <code class="code-preview"
+              style="display: block;">.icon-heart</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-info icons"></i><span class="name">info</span> <code class="code-preview"
+              style="display: block;">.icon-info</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-key icons"></i><span class="name">key</span> <code class="code-preview"
+              style="display: block;">.icon-key</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-link icons"></i><span class="name">link</span> <code class="code-preview"
+              style="display: block;">.icon-link</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-lock icons"></i><span class="name">lock</span> <code class="code-preview"
+              style="display: block;">.icon-lock</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-lock-open icons"></i><span class="name">lock-open</span> <code class="code-preview"
+              style="display: block;">.icon-lock-open</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-magnifier icons"></i><span class="name">magnifier</span> <code class="code-preview"
+              style="display: block;">.icon-magnifier</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-magnifier-add icons"></i><span class="name">magnifier-add</span> <code class="code-preview"
+              style="display: block;">.icon-magnifier-add</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-magnifier-remove icons"></i><span class="name">magnifier-remove</span> <code
+              class="code-preview" style="display: block;">.icon-magnifier-remove</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-paper-clip icons"></i><span class="name">paper-clip</span> <code class="code-preview"
+              style="display: block;">.icon-paper-clip</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-paper-plane icons"></i><span class="name">paper-plane</span> <code class="code-preview"
+              style="display: block;">.icon-paper-plane</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-power icons"></i><span class="name">power</span> <code class="code-preview"
+              style="display: block;">.icon-power</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-refresh icons"></i><span class="name">refresh</span> <code class="code-preview"
+              style="display: block;">.icon-refresh</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-reload icons"></i><span class="name">reload</span> <code class="code-preview"
+              style="display: block;">.icon-reload</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-settings icons"></i><span class="name">settings</span> <code class="code-preview"
+              style="display: block;">.icon-settings</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-star icons"></i><span class="name">star</span> <code class="code-preview"
+              style="display: block;">.icon-star</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-symbol-female icons"></i><span class="name">symbol-female</span> <code class="code-preview"
+              style="display: block;">.icon-symbol-female</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-symbol-male icons"></i><span class="name">symbol-male</span> <code class="code-preview"
+              style="display: block;">.icon-symbol-male</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-target icons"></i><span class="name">target</span> <code class="code-preview"
+              style="display: block;">.icon-target</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-credit-card icons"></i><span class="name">credit-card</span> <code class="code-preview"
+              style="display: block;">.icon-credit-card</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-paypal icons"></i><span class="name">paypal</span> <code class="code-preview"
+              style="display: block;">.icon-paypal</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-tumblr icons"></i><span class="name">social-tumblr</span> <code class="code-preview"
+              style="display: block;">.icon-social-tumblr</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-twitter icons"></i><span class="name">social-twitter</span> <code class="code-preview"
+              style="display: block;">.icon-social-twitter</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-facebook icons"></i><span class="name">social-facebook</span> <code
+              class="code-preview" style="display: block;">.icon-social-facebook</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-instagram icons"></i><span class="name">social-instagram</span> <code
+              class="code-preview" style="display: block;">.icon-social-instagram</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-linkedin icons"></i><span class="name">social-linkedin</span> <code
+              class="code-preview" style="display: block;">.icon-social-linkedin</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-pinterest icons"></i><span class="name">social-pinterest</span> <code
+              class="code-preview" style="display: block;">.icon-social-pinterest</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-github icons"></i><span class="name">social-github</span> <code class="code-preview"
+              style="display: block;">.icon-social-github</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-google icons"></i><span class="name">social-google</span> <code class="code-preview"
+              style="display: block;">.icon-social-google</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-reddit icons"></i><span class="name">social-reddit</span> <code class="code-preview"
+              style="display: block;">.icon-social-reddit</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-skype icons"></i><span class="name">social-skype</span> <code class="code-preview"
+              style="display: block;">.icon-social-skype</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-dribbble icons"></i><span class="name">social-dribbble</span> <code
+              class="code-preview" style="display: block;">.icon-social-dribbble</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-behance icons"></i><span class="name">social-behance</span> <code class="code-preview"
+              style="display: block;">.icon-social-behance</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-foursqare icons"></i><span class="name">social-foursqare</span> <code
+              class="code-preview" style="display: block;">.icon-social-foursqare</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-soundcloud icons"></i><span class="name">social-soundcloud</span> <code
+              class="code-preview" style="display: block;">.icon-social-soundcloud</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-spotify icons"></i><span class="name">social-spotify</span> <code class="code-preview"
+              style="display: block;">.icon-social-spotify</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-stumbleupon icons"></i><span class="name">social-stumbleupon</span> <code
+              class="code-preview" style="display: block;">.icon-social-stumbleupon</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-youtube icons"></i><span class="name">social-youtube</span> <code class="code-preview"
+              style="display: block;">.icon-social-youtube</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-dropbox icons"></i><span class="name">social-dropbox</span> <code class="code-preview"
+              style="display: block;">.icon-social-dropbox</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-vkontakte icons"></i><span class="name">social-vkontakte</span> <code
+              class="code-preview" style="display: block;">.icon-social-vkontakte</code>
+          </div>
+          <div class="icon-box">
+            <i class="icon-social-steam icons"></i><span class="name">social-steam</span> <code class="code-preview"
+              style="display: block;">.icon-social-steam</code>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- is-active -->
+  <div class="modal ">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+
+      <div class="card has-background-white-ter">
+        <!-- <div class="card-image">
+              <figure class="image is-2by1">
+                <img src="https://via.placeholder.com/600x400" alt="Placeholder image">
+              </figure>
+            </div> -->
+        <div class="card-content">
+
+          <div class="icon is-large is-pulled-right">
+            <i class="icon-close sli-lg"></i>
+          </div>
+
+          <div class="field">
+            <p class="title">Sign In</h1>
+              <p class="control has-icons-left">
+                <input class="input" type="email" placeholder="Email">
+                <span class="icon is-small is-left">
+                  <i class="icon-envelope"></i>
+                </span>
+              </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="password" placeholder="Password">
+              <span class="icon is-small is-left">
+                <i class="icon-key"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="icon-eye"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-text">Forgot Password?</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- <button class="modal-close is-large" aria-label="close"></button> -->
+  </div>
+</body>
+
+</html>
