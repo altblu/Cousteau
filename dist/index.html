@@ -28,8 +28,11 @@
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-lava" href="https://github.com/altblu/cousteau/archive/master.zip" target="_blank">
-                Download
+              <a class="button is-ghost" href="request.html">
+                <span class="icon">
+                  <i class="icon-note"></i>
+                </span>
+                <span>Make a Request</span>
               </a>
             </div>
           </div>
@@ -58,11 +61,10 @@
       <nav class="tabs is-boxed is-centered">
         <div class="container">
           <ul class="is-uppercase" style="letter-spacing: 2px; font-size: 90%;">
-            <li class="has-background-grey-light has-text-black-ter"><a>Welcome</a></li>
+            <li><a href="index.html" class="has-background-grey-light has-text-black-ter">Welcome</a></li>
             <li><a href="brand-style-guide.pdf" target="_blank">Brand Guide (PDF)</a></li>
             <li><a href="resources.html">Brand Resources</a></li>
             <li><a href="framework.html">CSS Framework</a></li>
-            <li><a href="request.html">Make a Request</a></li>
           </ul>
         </div>
       </nav>
@@ -72,14 +74,24 @@
   <section class="container">
     <div class="columns section">
       <div class="column section">
-        <div class="content">
-          <div class="is-flex-vcentered"><div><span class="icon is-xlarge"><i class="icon-compass sli-lg"></i></span></div><div><h2 class="is-marginless">Welcome</h2></div></div>
-          <p>The Tech Soft 3D Design System is a tool to drive brand strength and consistency across all experiences.</p>
+        <div class="content has-text-centered">
+          <a href="examples/original.html">
+            <i class="icon-wrench sli-xl"></i>
+          </a>
+          <h2>Work In Progress</h2>
+          <p>This section is currently being developed, check back soon.</p>
         </div>
       </div>
     </div>
   </section>
-  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $('.menu-list li').click(function() {
+      $(this).find('a').toggleClass('is-expanded');
+      $(this).find('ul').slideToggle('fast');
+    });
+  </script>
 </body>
 
 </html>

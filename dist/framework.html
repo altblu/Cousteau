@@ -28,8 +28,11 @@
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-lava" href="https://github.com/altblu/cousteau/archive/master.zip" target="_blank">
-                Download
+              <a class="button is-ghost opener">
+                <span class="icon">
+                  <i class="icon-note"></i>
+                </span>
+                <span>Make a Request</span>
               </a>
             </div>
           </div>
@@ -61,8 +64,7 @@
             <li><a href="index.html">Welcome</a></li>
             <li><a href="brand-style-guide.pdf" target="_blank">Brand Guide (PDF)</a></li>
             <li><a href="resources.html">Brand Resources</a></li>
-            <li><a class="has-background-grey-light has-text-black-ter" href="framework.html">CSS Framework</a></li>
-            <li><a href="request.html">Make a Request</a></li>
+            <li><a href="framework.html" class="has-background-grey-light has-text-black-ter">CSS Framework</a></li>
           </ul>
         </div>
       </nav>
@@ -73,14 +75,63 @@
     <div class="columns section">
       <div class="column section">
         <div class="content has-text-centered">
-          <i class="icon-wrench sli-xl"></i>
+          <a href="examples/original.html">
+            <i class="icon-wrench sli-xl"></i>
+          </a>
           <h2>Work In Progress</h2>
           <p>This section is currently being developed, check back soon.</p>
         </div>
       </div>
     </div>
   </section>
-  </div>
+
+  <section class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card has-background-white-ter">
+        <!-- <div class="card-image">
+          <figure class="image is-2by1">
+            <img src="https://via.placeholder.com/600x400" alt="Placeholder image">
+          </figure>
+        </div> -->
+        <div class="card-content has-text-centered">
+          <!-- <div class="icon is-large is-pulled-right">
+            <i class="icon-close sli-lg"></i>
+          </div> -->
+          <p class="title">Make a Request</h1>
+          <form name="request" method="POST" data-netlify="true">
+            <div class="field">
+              <div class="control">
+                <textarea class="textarea is-medium" placeholder="What do you need?" rows="10" name="details"></textarea>
+              </div>
+            </div>
+            <div class="field is-grouped is-grouped-centered">
+              <div class="control">
+                <button class="button is-lava" type="submit">Submit</button>
+              </div>
+              <div class="control">
+                <a class="button is-ghost closer">Cancel</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $('.menu-list li').click(function() {
+      $(this).find('a').toggleClass('is-expanded');
+      $(this).find('ul').slideToggle('fast');
+    });
+    $('.opener').click(function() {
+      $('.modal').addClass('is-active')
+    });
+    $('.closer').click(function() {
+      $('.modal').removeClass('is-active')
+    });
+  </script>
 </body>
 
 </html>
