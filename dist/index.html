@@ -6,30 +6,9 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
   <link rel="stylesheet" href="cousteau.css">
-  <style>
-    .icons {
-      font-size: 48px;
-    }
-
-    .flex-icons {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .icon-box {
-      flex-basis: 30%;
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
 </head>
 
 <body>
-
   <div class="has-background-white">
     <nav class="navbar container" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
@@ -79,10 +58,11 @@
       <nav class="tabs is-boxed is-centered">
         <div class="container">
           <ul class="is-uppercase" style="letter-spacing: 2px; font-size: 90%;">
-            <li class="has-background-grey-light has-text-black-ter"><a>Overview</a></li>
-            <li><a>Brand Guidelines</a></li>
-            <li><a>CSS Framework</a></li>
-            <li><a>Make a Request</a></li>
+            <li class="has-background-grey-light has-text-black-ter"><a>Welcome</a></li>
+            <li><a href="brand-style-guide.pdf" target="_blank">Brand Guide (PDF)</a></li>
+            <li><a href="resources.html">Brand Resources</a></li>
+            <li><a href="framework.html">CSS Framework</a></li>
+            <li><a href="request.html">Make a Request</a></li>
           </ul>
         </div>
       </nav>
@@ -92,69 +72,13 @@
   <section class="container">
     <div class="columns section">
       <div class="column section">
-        <!-- <div class="content is-medium">
-          <h1>This is a large section h1</h1>
-          <p>The Developer Zone is a resource point for developers currently using or evaluating Tech Soft 3D components. If you are interested in evaluating these products, you can sign up for the free evaluation program. At the Developer Zone, you will find detailed technical information, download access to current and previous versions of Tech Soft 3D products, and information about new features.</p>
-        </div> -->
         <div class="content">
-          <h1>Welcome</h1>
+          <div class="is-flex-vcentered"><div><span class="icon is-xlarge"><i class="icon-compass sli-lg"></i></span></div><div><h2 class="is-marginless">Welcome</h2></div></div>
           <p>The Tech Soft 3D Design System is a tool to drive brand strength and consistency across all experiences.</p>
         </div>
       </div>
     </div>
   </section>
-  <!-- is-active -->
-  <div class="modal ">
-    <div class="modal-background"></div>
-    <div class="modal-content">
-
-      <div class="card has-background-white-ter">
-        <!-- <div class="card-image">
-              <figure class="image is-2by1">
-                <img src="https://via.placeholder.com/600x400" alt="Placeholder image">
-              </figure>
-            </div> -->
-        <div class="card-content">
-
-          <div class="icon is-large is-pulled-right">
-            <i class="icon-close sli-lg"></i>
-          </div>
-
-          <div class="field">
-            <p class="title">Sign In</h1>
-              <p class="control has-icons-left">
-                <input class="input" type="email" placeholder="Email">
-                <span class="icon is-small is-left">
-                  <i class="icon-envelope"></i>
-                </span>
-              </p>
-          </div>
-          <div class="field">
-            <p class="control has-icons-left has-icons-right">
-              <input class="input" type="password" placeholder="Password">
-              <span class="icon is-small is-left">
-                <i class="icon-key"></i>
-              </span>
-              <span class="icon is-small is-right">
-                <i class="icon-eye"></i>
-              </span>
-            </p>
-          </div>
-          <div class="field is-grouped">
-            <div class="control">
-              <button class="button is-link">Submit</button>
-            </div>
-            <div class="control">
-              <button class="button is-text">Forgot Password?</button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <!-- <button class="modal-close is-large" aria-label="close"></button> -->
   </div>
 </body>
 
