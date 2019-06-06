@@ -4,7 +4,7 @@ This project uses node sass to compile the CSS file.
 
 ## Getting Started
 
-Clone the repository
+Clone the repository.
 
 Run `npm install` to install necessary dependencies.
 
