@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 // Import a Google Font
-// @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
+// Set The Brand Palette
 $brand-color: (
   royal: #006098,
   sky: #0090D0,
@@ -11,7 +11,6 @@ $brand-color: (
   silver: #979898,
   snow: #efefef
 );
-// map-get($brand-color, royal);
 
 $primary-font: "Open Sans", sans-serif;
 
@@ -21,27 +20,17 @@ $grey-dark: map-get($brand-color, slate);
 $grey-light: map-get($brand-color, snow);
 $primary: map-get($brand-color, royal);
 $link:  map-get($brand-color, sky);
-// $widescreen-enabled: false;
-// $fullhd-enabled: false;
-// Update some of Bulma's component variables
+
+// Update Bulma's component variables here (variables can be found in the Bulma node_module)
 $body-background-color: map-get($brand-color, snow);
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
-
-// $input-background-color: #f9f9f9;
-
 $control-radius: 0;
 $control-border-width: 1px;
-
 $navbar-item-img-max-height: 4rem;
-
 $button-padding-vertical: 0.8em;
-
 $tabs-link-padding: 0.8em 2em;
-
-// $button-padding-vertical: 20px;
-// $button-padding-horizontal: 20px;
 
 // Import only what you need from Bulma
 // @import "../node_modules/bulma/sass/utilities/_all.sass";
@@ -57,6 +46,7 @@ $tabs-link-padding: 0.8em 2em;
 // Import everything
 @import "../node_modules/bulma/bulma.sass";
 
+// Style Extensions & Overrides Below
 @keyframes Gradient {
 	0% {
 		background-position: 0% 50%
@@ -149,8 +139,6 @@ $tabs-link-padding: 0.8em 2em;
 
 .menu-label {
   font-size:100%;
-  // border-bottom: 1px solid #ccc;
-  // padding-bottom: 6px;
   &:not(:first-of-type) {
     padding-top: 20px;
   }
@@ -187,16 +175,6 @@ $tabs-link-padding: 0.8em 2em;
         background: map-get($brand-color, sky);
       }
     }
-    // &:hover {
-    //   &:after {
-    //     transition: 200ms all;
-    //     transform: rotate(45deg);
-    //   }
-    //   &:before {
-    //     transition: 200ms all;
-    //     background: map-get($brand-color, sky);
-    //   }
-    // }
     &.is-expanded {
       &:after {
         transition: 200ms all;
