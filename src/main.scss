@@ -23,7 +23,6 @@ $primary: map-get($brand-color, royal);
 $link:  map-get($brand-color, sky);
 // $widescreen-enabled: false;
 // $fullhd-enabled: false;
-
 // Update some of Bulma's component variables
 $body-background-color: map-get($brand-color, snow);
 $control-border-width: 2px;
@@ -85,15 +84,15 @@ $tabs-link-padding: 0.8em 2em;
 }
 
 .sli-md {
-  font-size:24px;
+  font-size: 24px;
 }
 
 .sli-lg {
-  font-size:32px;
+  font-size: 32px;
 }
 
 .sli-xl {
-  font-size:48px;
+  font-size: 48px;
 }
 
 .button {
@@ -111,10 +110,10 @@ $tabs-link-padding: 0.8em 2em;
   overflow: hidden;
   img {
     position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -124,7 +123,7 @@ $tabs-link-padding: 0.8em 2em;
 
 .content {
   h1,h2,h3,h4,h5 {
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 3px;
   }
@@ -139,8 +138,8 @@ $tabs-link-padding: 0.8em 2em;
 }
 
 .is-flex-vcentered {
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
 }
 
 .icon.is-xlarge {
@@ -151,9 +150,9 @@ $tabs-link-padding: 0.8em 2em;
 .menu-label {
   font-size:100%;
   // border-bottom: 1px solid #ccc;
-  // padding-bottom:6px;
+  // padding-bottom: 6px;
   &:not(:first-of-type) {
-    padding-top:20px;
+    padding-top: 20px;
   }
 }
 
@@ -163,22 +162,22 @@ $tabs-link-padding: 0.8em 2em;
     position: relative;
     &:before {
       transition: 200ms all;
-      content:'';
-      position:absolute;
-      height:16px;
-      width:16px;
+      content: '';
+      position: absolute;
+      height: 16px;
+      width: 16px;
       background: map-get($brand-color, royal);
-      left:10px;
-      top:10px;
+      left: 10px;
+      top: 10px;
     }
     &:after {
       transition: 200ms all;
       content: '\002B';
-      position:absolute;
-      color:#fff;
-      left:13px;
-      top:7px;
-      font-size:18px;
+      position: absolute;
+      color: #fff;
+      left: 13px;
+      top: 7px;
+      font-size: 18px;
     }
     &.is-active {
       &:after {
